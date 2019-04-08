@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1051202307212",
+    "firebase_url": "https://order-balok.firebaseio.com",
+    "project_id": "order-balok",
+    "storage_bucket": "order-balok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051202307212:android:d455558846d0bc2c",
+        "android_client_info": {
+          "package_name": "com.justloon.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051202307212-apm77pni2eofbtgf2kqvo1ea57ncc5gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justloon.myapplication",
+            "certificate_hash": "89dd2f7ab4e0d6bdec262520f77bdda0d6bdf4de"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIIBjMEIqpfrfoXfvLrYuXG-730QH248w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051202307212-hvcnan4d4s3nneb3oniho5a3oig4l32u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
