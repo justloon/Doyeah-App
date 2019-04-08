@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputPelanggan">
+    tools:context=".LoginAdmin">
 
     <RelativeLayout
         android:id="@+id/logo_doy"
@@ -30,26 +30,35 @@
 
 
             <EditText
-                android:layout_below="@+id/logo_doy"
-                android:id="@+id/inputNama"
+                android:id="@+id/input_Email"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="16dp"
-                android:hint="Masukan Nama"
+                android:hint="Email"
+                android:background="@drawable/rounded_edittext_login"/>
+
+            <EditText
+                android:id="@+id/input_pass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Password"
+                android:password="true"
                 android:background="@drawable/rounded_edittext_login"/>
 
             <Button
-                android:id="@+id/btnInput"
-                android:layout_below="@+id/inputNama"
+                android:id="@+id/btn_masuk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:background="@drawable/rounded_button_login"
-                android:text="Selesai" />
+                android:text="Masuk" />
         </LinearLayout>
 
     </RelativeLayout>
@@ -73,15 +82,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masuk Sebagai " />
+                android:text="Login Untuk Admin" />
 
-            <TextView
-                android:id="@+id/btnAdmin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Admin !"
-                android:textColor="#ff5454"
-                android:clickable="true"/>
 
         </LinearLayout>
 

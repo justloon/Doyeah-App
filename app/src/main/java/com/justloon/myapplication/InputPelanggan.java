@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -22,6 +23,7 @@ public class InputPelanggan extends AppCompatActivity {
 
     private Button mSaveBtn;
     private EditText mInput;
+    private TextView mText;
     FirebaseFirestore firebaseFirestore;
 
 
@@ -32,13 +34,14 @@ public class InputPelanggan extends AppCompatActivity {
 
         mInput = (EditText) findViewById(R.id.inputNama);
         mSaveBtn = (Button) findViewById(R.id.btnInput);
+        mText = (TextView) findViewById(R.id.btnAdmin);
 
         firebaseFirestore = FirebaseFirestore.getInstance();
 
         mSaveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainActivity();
+                startActivity(new Intent(InputPelanggan.this,MainActivity.class));
 
                 String nName = mInput.getText().toString();
 
@@ -59,11 +62,13 @@ public class InputPelanggan extends AppCompatActivity {
                 });
             }
         });
-    }
 
-    public void mainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        mText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(InputPelanggan.this,LoginAdmin.class));
+            }
+        });
     }
 
 }
